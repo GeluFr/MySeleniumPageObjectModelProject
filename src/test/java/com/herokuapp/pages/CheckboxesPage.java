@@ -3,6 +3,7 @@ package com.herokuapp.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class CheckboxesPage extends BasePage {
 
@@ -20,5 +21,11 @@ public class CheckboxesPage extends BasePage {
     public void checkboxCheck2(){
         if (!chechbox2.isSelected())
         chechbox2.click();
+    }
+    public boolean checkIfValid1(){
+        return checkbox1.isSelected();
+    }
+    public boolean checkIfValid2(){
+        return chechbox2.isSelected();
     }
 }

@@ -15,5 +15,7 @@ public class CheckboxesTest extends BaseTest{
         checkboxesPage.checkboxCheck1();
         checkboxesPage.checkboxCheck2();
         waitForNumberOfSeconds(3);
+        Assert.assertTrue(checkboxesPage.checkIfValid1());
+        Assert.assertTrue(checkboxesPage.checkIfValid2());
     }
 }
